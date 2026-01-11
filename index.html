@@ -4,11 +4,6 @@
 <meta charset="UTF-8">
 <title>Country Dialogue Script Editor</title>
 <link rel="stylesheet" href="style.css">
-
-<!-- Firebase -->
-<script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-database-compat.js"></script>
-
 </head>
 <body>
 
@@ -45,6 +40,10 @@
 <label>Border Color</label>
 <input type="color" value="#aaaaaa" id="borderColor">
 <label><input type="checkbox" id="glowToggle"> Glow</label>
+
+<h3>Project</h3>
+<button id="exportJSONBtn">Export JSON</button>
+<input type="file" id="importJSON" accept="application/json">
 
 </div>
 
