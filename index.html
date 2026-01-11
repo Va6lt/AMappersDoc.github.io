@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Country Dialogue Script Editor</title>
+<link rel="stylesheet" href="style.css">
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-database-compat.js"></script>
+
+</head>
+<body>
+
+<div id="preview">
+    <div id="bg"></div>
+    <div id="script"></div>
+</div>
+
+<div id="controls">
+
+<h3>Speaker</h3>
+<input id="countryName" placeholder="Country name">
+<input type="file" id="flagUpload" accept="image/png">
+<select id="speakerSelect"></select>
+<button id="addSpeakerBtn">Add / Update Speaker</button>
+
+<h3>Dialogue</h3>
+<textarea id="lineText" rows="3"></textarea>
+<input id="timestamp" placeholder="(0:18)">
+<button id="addLineBtn">Add Line</button>
+
+<h3>Background</h3>
+<input type="file" id="bgUpload" accept="image/*">
+<label>Blur</label>
+<input type="range" min="0" max="12" value="0" id="blurRange">
+<button id="setBgBtn">Set Background</button>
+
+<h3>Text Size</h3>
+<input type="range" min="12" max="26" value="16" id="textSizeRange">
+
+<h3>Flag Style</h3>
+<label>Border Thickness</label>
+<input type="range" min="0" max="6" value="1" id="borderRange">
+<label>Border Color</label>
+<input type="color" value="#aaaaaa" id="borderColor">
+<label><input type="checkbox" id="glowToggle"> Glow</label>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
